@@ -8,7 +8,7 @@ public void setup()
 {
   size(800,800);
   background(120);
-  b1 = new Ball(5,4,15);
+  b1 = new Ball();
   b2 = new Ball(6,5,18);
   b3 = new Ball(4,6,20);
 }
@@ -83,12 +83,12 @@ public class Ball
   
   public void checkEdges()
   {
-    if(x > width-1.5*diameter || x <= 0 + 1.5 * diameter)
+    if(x > width-0.5*diameter || x < 0 + 0.5 * diameter)
      { 
       xD = -xD;
      }
    
-  if(y < height-1.5*diameter || y <= 0 + 1.5 * diameter)
+  if(y > height-0.5*diameter || y < 0 + 0.5 * diameter)
    { 
     yD = -yD;
    }
