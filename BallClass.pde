@@ -10,7 +10,7 @@ public void setup()
   background(120);
   b1 = new Ball();
   b2 = new Ball();
-  b3 = new Ball(4,6,20);
+  b3 = new Ball(50,50,50);
 }
 
 //draw method
@@ -84,14 +84,12 @@ public class Ball
   public void checkEdges()
   {
     if(x > width-0.5*diameter || x < 0 + 0.5 * diameter)
-     { 
       xD = -xD;
-     }
+     
    
-  if(y > height-0.5*diameter || y < 0 + 0.5 * diameter)
-   { 
-    yD = -yD;
-   }
+    if(y > height-0.5*diameter || y < 0 + 0.5 * diameter)
+      yD = -yD;
+   
    
   }
 }
