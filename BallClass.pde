@@ -9,7 +9,7 @@ public void setup()
   size(800,800);
   background(120);
   b1 = new Ball();
-  b2 = new Ball(6,5,18);
+  b2 = new Ball();
   b3 = new Ball(4,6,20);
 }
 
